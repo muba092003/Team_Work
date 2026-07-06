@@ -1,0 +1,97 @@
+:root {
+  --primary: #6c63ff;
+  --accent: #ff7a59;
+  --deep: #1f2140;
+  --muted: #6b7280;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--deep);
+  background: #fffdf9;
+}
+
+.navbar {
+  background: rgba(31, 33, 64, 0.9);
+  backdrop-filter: blur(8px);
+}
+
+.hero {
+  min-height: 100vh;
+  padding: 120px 0 80px;
+  background: linear-gradient(
+    135deg,
+    rgba(108, 99, 255, 0.95),
+    rgba(255, 122, 89, 0.9)
+  );
+}
+
+.letter-spacing {
+  letter-spacing: 0.3em;
+}
+
+.glass-card,
+.info-card,
+.benefit-card {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+.bg-soft {
+  background: #f7f4ff;
+}
+
+.section-title {
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.color-card {
+  width: 100%;
+  border: none;
+  border-radius: 20px;
+  padding: 24px;
+  color: white;
+  text-align: left;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.color-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 35px rgba(0, 0, 0, 0.14);
+}
+
+.color-card.blue {
+  background: linear-gradient(135deg, #4da3ff, #2d5fe8);
+}
+
+.color-card.green {
+  background: linear-gradient(135deg, #45c29b, #218c74);
+}
+
+.color-card.yellow {
+  background: linear-gradient(135deg, #f7c948, #eb8f2f);
+}
+
+.color-swatch {
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  margin-bottom: 12px;
+  background: rgba(255, 255, 255, 0.3);
+  border: 2px solid rgba(255, 255, 255, 0.55);
+}
+
+.btn-outline-light:hover {
+  background: white;
+  color: var(--deep);
+}
